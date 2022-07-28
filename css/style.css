@@ -1,0 +1,645 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap");
+
+*,*::after,
+*::before{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+    font-family:'Rubik', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+.inner{
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*header section starts here*/
+
+.header{
+    width: 100%;
+    height: 530px;
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.header .login-btn{
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: right;
+    padding: 2rem 3rem 0 0;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.header__content{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 13rem;
+    color: white;
+}
+
+.text{
+    color: #00ED82;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin: 2rem 0;
+    font-weight: 500;
+}
+
+.text-xl{
+    font-size: 7rem;
+    margin: 2.5rem 0;
+}
+
+.subtext-xl{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.header__content .hulu-logo{
+    width: 25rem;
+}
+
+.slogan{
+    margin: 2rem 0;
+    font-size: 2.2rem;
+}
+
+.watch{
+    margin: 2rem 0;
+    font-weight: 200;
+    font-size: 1.6rem;
+}
+
+.btn{
+    margin: 1rem 0;
+    display: inline-block;
+    color: #262930;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: white;
+    padding: 1.8rem 4rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn:hover{
+    opacity: .8;
+}
+
+/*header section ends here*/
+
+/*sub-header section starts here*/
+
+.sub-header{
+    width: 100%;
+    background-image: linear-gradient(
+        318.68deg, #0F495C 0%, #0D3640 49.72%, #08141F 100%);
+    justify-content: space-between;
+    padding: 3.5rem;
+
+}
+
+.logos{
+    flex-basis: 25%;
+}
+
+.logos img{
+    width: 100%;
+}
+
+.details{
+    flex-basis: 50%;
+}
+
+.details-text{
+    color: #00ED82;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.details-channels{
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 300;
+    margin: 1.5rem 0;
+}
+.details-details{
+    color: white;
+}
+
+.get-bundle{
+    flex-basis: 20%;
+    text-align: center;
+}
+
+.getbundle-btn{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 1.5rem 3rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+.get-bundle__apply{
+    display: block;
+    color: white;
+    margin-top: 1.5rem;
+}
+
+/*sub-header section ends here*/
+
+/*categories section starts here*/
+
+.categories-section{
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 5rem 3rem;
+    color: white;
+}
+.categories-section .text{
+    margin: 0;
+}
+
+.categories{
+    justify-content: space-between;
+    text-align: left;
+    margin-top: 3rem;
+}
+.categories-item{
+    flex-basis: 23%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+}
+.categories-item::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(
+     156.82deg, rgba(0, 0, 0, 0.6) 4.58%, rgba(0, 0, 0, 0) 69.61%), linear-gradient(
+     24.5deg, rgba(0, 0, 0, 0.2) 4.71%, rgba(0, 0, 0, 0) 71.49%);
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+.categories-item.categories-item-1{
+    background-image: url(../img/cover-1.jpg);
+}
+
+.categories-item.categories-item-2{
+    background-image: url(../img/cover-2.jpg);
+}
+
+.categories-item.categories-item-3{
+    background-image: url(../img/cover-3.jpg);
+}
+
+.categories-item.categories-item-4{
+    background-image: url(../img/cover-4.jpg);
+}
+
+.categories-text-1,.categories-text-2{
+    position: relative;
+    z-index: 2;
+    margin: 2rem 0 1rem 2rem;
+}
+
+
+/*categories section ends here*/
+
+/*live section starts here*/
+
+.live-section{
+    width: 100%;
+    background-color: #151516;
+    padding: 5rem 3rem;
+    text-align: center;
+    color: white;
+}
+
+.live{
+    padding: 10rem;
+    border: 4px solid #00ED82;
+    border-radius: 10px;
+}
+.live .subtext-xl{
+    margin: 2rem 0;
+}
+.live .live-link{
+    color: white;
+    margin: 2rem 0;
+    display: block;
+    font-size: 2rem;
+}
+/*live section ends here*/
+
+/*welcome section starts here*/
+
+.welcome-section{
+    width: 100%;
+}
+
+.welcome{
+    width: 100%;
+    position: relative;
+    height: 70rem;
+}
+
+.welcome-tab{
+    width: 28%;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 55;
+    list-style-type: none;
+    top: 18%;
+    left: 10%;
+}
+.welcome-tab li{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding-bottom: .5rem;
+    cursor: pointer;
+}
+
+.active-tab{
+    border-bottom: 4px solid white;
+}
+
+.textarea{
+    width: 45%;
+    color: white;
+    position: relative;
+    top: 25%;
+    left: 10%;
+    animation: slideUp 600ms linear 0s;
+}
+
+@keyframes slideUp{
+    0%{
+        transform: translateY(4rem);
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(2rem);
+    }
+    100%{
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+}
+
+.textarea .text-xl{
+    margin: 0;
+}
+
+.textarea .subtext-xl{
+    margin: 2rem 0;
+}
+
+.welcome-area{
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70rem;
+    display: none;
+}
+
+.sports-area{
+    background-image: url("../img/live-sports.jpg");
+}
+
+.news-area{
+    background-image: url("../img/live-news.jpg");
+}
+
+.music-area{
+    background-image: url("../img/live=music.jpg");
+}
+
+.active{
+    display: block;
+}
+
+
+.channels{
+    width: 50%;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.channels img{
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+/*welcome section end here*/
+
+/*footer section starts here*/
+.footer-section{
+    width: 100%;
+    background-color: #EBEDF2;
+    padding: 5rem 10rem;
+}
+
+.footer{
+    max-width: 1050px;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(230 220 222);
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+.list{
+    flex-basis: 16%;
+}
+
+.list a{
+    display: block;
+    text-decoration: none;
+    color: #656B7B;
+    display: block;
+    padding-top: 2rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.list .footer__text{
+    color: #262930;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.social{
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    justify-content: space-between;
+}
+
+.icon{
+    width: 170px;
+    justify-content: space-between;
+}
+
+.name{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.name span{
+font-weight: 600;
+}
+
+/*footer section ends here*/
+
+/*media queries starts here*/
+
+
+@media only screen and (max-width:1200px){
+    .welcome-tab{
+        width: 100%;
+        justify-content: center;
+        margin: 0 auto;
+        left: 0;
+    }
+    
+    .welcome-tab li{
+        margin: 0 15px;
+    }
+
+    .textarea{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 5rem;
+        left: 0;
+    }
+
+    .channels{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .channels img{
+        margin: 0 10px;
+    }
+    .sports-area{
+        background-image: url("../img/live-sports-small.jpg");
+    }
+    
+    .news-area{
+        background-image: url("../img/live-news-small.jpg");
+    }
+    
+    .music-area{
+        background-image: url("../img/live-music-small.jpg");
+    }
+
+    .list{
+        flex-basis: 33%;
+        margin-bottom: 3rem;
+    }
+}
+@media only screen and (max-width:1000px){
+       .sub-header{
+         flex-direction: column;
+         text-align: center;
+       }
+
+       .logos{
+        width: 50%;
+        margin: 2rem auto;
+    }
+
+    .details-channels{
+        font-size: 2rem;
+    }
+
+    .getbundle-btn{
+        font-size: 1rem;
+        padding: 1rem 2rem;
+        margin: 2rem 0 0 0;
+    }
+
+    .categories-item{
+        flex-basis: 40%;
+        margin-bottom: 5rem;
+    }
+
+    .text-xl{
+        font-size: 5rem;
+    }
+
+    .subtext-xl{
+        font-size: 1.5rem;
+    }
+    
+    
+}
+
+@media only screen and (max-width:768px){
+    .header{
+        background-position:90%;
+    }
+
+    .categories-item,.categories-item::after{
+        flex-basis: 45%;
+        height: 300px;
+    }
+
+
+    .text-xl{
+        font-size: 3rem;
+    }
+
+    .subtext-xl{
+        font-size: 1.2rem;
+    }
+
+    .footer-section{
+        padding: 5rem 3rem;
+    }
+}
+
+
+@media only screen and (max-width:550px){
+
+    
+    .header__content{
+        padding: 0 2rem;
+    }
+
+    .header__content .hulu-logo{
+        width: 15rem;
+    }
+
+    .sub-header{
+        padding: 2rem;
+    }
+
+    .categories-section{
+        padding: 2rem;
+    }
+
+    .categories-text-1,.categories-text-2{
+        margin: 1rem 0 1rem 1rem;
+    }
+
+    .text{
+        font-size: 1.1rem;
+    }
+
+    .slogan{
+        font-size: 1.5rem;
+    }
+
+    .watch{
+        font-size: 1.3rem;
+    }
+
+    .btn{
+        font-size: 1.3rem;
+        padding: 1.7rem 3rem;
+    }
+
+    .live-section{
+        padding: 2rem;
+    }
+    
+    .live{
+        padding: 2rem;
+    }
+
+    .text-xl{
+        font-size: 2rem;
+    }
+
+    .subtext-xl{
+        font-size: 1.1rem;
+    }
+
+    .live .live-link{
+        font-size: 1.2rem;
+    }
+
+    .welcome-area{
+       background-position: 0 65%;
+    }
+
+    
+    .welcome-tab li{
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+
+
+    .textarea{
+        padding: 2rem;
+    }
+
+    .list{
+        flex-basis: 100%;
+    }
+
+    .footer{
+        padding-bottom: 0;
+    }
+
+    .social{
+        justify-content: center;
+        padding: 1rem 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .icon{
+        margin: 1.5rem 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .icon img{
+        margin: 0 1.5rem;
+    }
+
+}
+
+
+/*media queries end here*/
